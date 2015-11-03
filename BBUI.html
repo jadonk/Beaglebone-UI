@@ -954,7 +954,7 @@ function drawLED(led){
         }
     }
     else if (led.subType === 'input'){
-        console.log(led.input + ' ' + led.output);
+        //console.log(led.input + ' ' + led.output);
         if (led.power === 'on'){
             ledLight(btn[led.btn].ledX,btn[led.btn].ledY,led.ctx)
             led.check = setInterval(doInputRead, 100);
